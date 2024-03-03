@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main (String[] args) {
-        int year = 1600;
+        int year = 2000;
         checkLeapYear(year);
         int currentYear = LocalDate.now().getYear();
         int OS = 1;
@@ -16,11 +16,10 @@ public class Main {
         public static void checkLeapYear( int checkYear) {
             if (checkYear < 1584) {
                 System.out.println(" до 1584 года, высокосные года не считали ");
-            }
-            if (checkYear > 1584 && ( checkYear % 400 == 0 && checkYear % 100 != 0 || checkYear % 4 == 0)) {
-                    System.out.println(" " + checkYear + " год является высокосным ");
-            } else {
-                    System.out.println(" " + checkYear + "  год не является высокосным ");
+            } else if (checkYear > 1584 && (checkYear % 400 == 0 && checkYear % 100 != 0 || checkYear % 4 == 0)) {
+                System.out.println(" " + checkYear + " год является высокосным ");
+            }else {
+                System.out.println(" " + checkYear + "  год не является высокосным ");
 
             }
 
