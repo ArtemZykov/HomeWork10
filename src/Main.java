@@ -28,9 +28,9 @@ public class Main {
                 System.out.println(" Установите облегченную версию ПО для IOS  по ссылке ");
             } else if (currenYear >= 2015 && OS == 0) {
                 System.out.println(" Позже вам все равно необходимо будет установить облегченную версию для IOS");
-            } else if (currenYear < 2015 && OS == 1) {
+            } else if (currenYear < 2015 && OS != 0) {
                 System.out.println(" Установи облегченную версию для Android по ссылке ");
-            } else if (currenYear >= 2015 && OS == 1) {
+            } else if (currenYear >= 2015 && OS != 0) {
                 System.out.println(" Позже вам все равно необходимо будет установить облегченную версию для Android ");
             } else {
                 System.out.println(" неверно задана ПО ");
